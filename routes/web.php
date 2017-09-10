@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/home',function(){
+	$name = "nan";
+	$department = "computer enginerring";
+	return view('index',compact('name','department'));
+});
+Route::get('/index_1', function ()
+ {
+ 	$id = "5735512007";
+    return view('index_1',compact('id'));
+});
